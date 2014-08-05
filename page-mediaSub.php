@@ -8,16 +8,6 @@ Template Name: Media sub
 <?php get_header(); ?>
 <?php the_post(); ?>
 
-    <header class="main-header">
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="logo-title">
-            <h1>Quartzburg Gold</h1>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <div class="row">
       <div class="large-12 columns">
         <div class="panel">
@@ -25,7 +15,6 @@ Template Name: Media sub
           <?php the_content(); ?>
         </div>
       </div>
-
 
       <div class="lare-12 columns">
         <div class="row">
