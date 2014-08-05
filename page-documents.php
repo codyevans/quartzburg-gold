@@ -37,12 +37,30 @@ the_post();
     ); ?> 
     
     <div class="row" id="login-form">
-      <div class="large-6 columns">
+      <div class="large-6 columns login-form-section">
+        <h4>Log in</h4>
+        <hr>
          <?php wp_login_form( $args ); ?>
+       </div>
+        <div class="large-6 columns support-form-section">
+          <?php
+          wp_reset_postdata();
+          $args = array(
+            'pagename' => 'contact-support-form'
+          );
+
+          $the_query = new WP_Query($args);
+        ?>
+
+        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+          <h4>Contact Support</h4>
+          <hr>
+          <?php the_content(); ?>  
+        <?php endwhile; // end of loop ?>
        </div>
     </div> 
 
-  <?php } ?> 
+  <?php } // end if logged_in statement  ?> 
 
 
 <?php get_footer(); ?>
