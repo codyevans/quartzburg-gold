@@ -37,12 +37,12 @@ the_post();
     ); ?> 
     
     <div class="row" id="login-form">
-      <div class="large-6 columns login-form-section">
-        <h4>Log in</h4>
+      <div class="large-6 columns" id="login-form-section">
+        <h4>Sign in</h4>
         <hr>
          <?php wp_login_form( $args ); ?>
        </div>
-        <div class="large-6 columns support-form-section">
+        <div class="large-6 columns" id="support-form-section">
           <?php
           wp_reset_postdata();
           $args = array(

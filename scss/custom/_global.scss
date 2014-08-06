@@ -1,7 +1,10 @@
+// color vars
+$main-yellow: #FEE019;
+
+
 body {
 	background: scale-color(#fff, $lightness: -5%);
 }
-
 html, body {
 	height: 100%;
 }
@@ -10,10 +13,10 @@ html, body {
 	min-height: 100%;
 	margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
 }
-
 .main-footer, .push {
 	height: 100px; /* '.push' must be the same height as 'footer' */
 }
+
 
 // terms and conditions styles
 #terms-and-conditions, .page-id-11 {
@@ -22,20 +25,19 @@ html, body {
 		font-size: 27px;
 		margin-bottom: 20px;
 	}
-
 	h3 {
 		font-size: 12px;
 		font-weight: bold;
 	}
-
 	p {
 		font-size: 10px;
 	}
 }
 
+
 // main header
 .main-header {
-	background: #FEE019;
+	background: $main-yellow;
 	text-align: center;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
@@ -60,13 +62,31 @@ html, body {
 	}
 }
 
+
 // main footer 
 .main-footer {
 	background: scale-color(#fff, $lightness: -12%);
 	padding: 25px 0 0 0;
+	margin-top: 125px;
 	border-top: 1px solid rgba(black, 0.1);
 
 } // main-footer
+
+
+// documents page
+.form-section-highlight {
+	background: rgba($main-yellow, 0.2);
+	
+	hr {
+		border: 1px solid rgba(black, 0.2);
+	}
+
+} // end form-section-highlight
+
+
+
+
+
 
 
 
